@@ -332,7 +332,69 @@
               </div>
             </div>
 
+            <div class="modal" id=edit_data tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">TAMBAH DATA</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post" action="<?php echo base_url() . 'admin/tambah_barang'; ?>">
 
+                      <div class="form-group">
+                        <label>Kode Donat</label>
+                        <input type="text" name="kode" class="form-control" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Harga Donat</label>
+                        <input type="text" name="harga_donat" class="form-control" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Varian Toping</label>
+                        <br>
+                        <select name="toping">
+                          <option value="Kacang">Kacang</option>
+                          <option value="Coklat">Coklat</option>
+                          <option value="Greentea">Greentea</option>
+                          <option value="Tiramisu">Tiramisu</option>
+                          <option value="Strowberry">Strowberry</option>
+                          <option value="Bluebery">Bluebery</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Harga Toping</label>
+                        <input type="text" name="harga_top" class="form-control" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Stok</label>
+                        <input type="text" name="stok" class="form-control" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label> Gambar Barang</label>
+                        <input type="file" name="gambar" class="form-control">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-danger" data-dismiss="modal">RESET</button>
+                    <input type="submit" class="btn btn-primary"></input>
+                  </div>
+                  </form>
+
+                </div>
+
+
+
+
+              </div>
+            </div>
 
 
             <!-- Footer -->
